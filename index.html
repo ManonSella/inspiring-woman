@@ -10,6 +10,10 @@
       crossorigin="anonymous"
     />
     <script
+      src="https://kit.fontawesome.com/3686c6d29f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
@@ -17,96 +21,311 @@
     <title>MF</title>
     <style>
       body {
-        background: linear-gradient(
-          109.6deg,
-          rgb(0, 0, 0) 11.2%,
-          rgb(247, 30, 30) 100.3%
-        );
+        background: rgb(0, 0, 0);
       }
-      .wrapper {
+      /*.wrapper {
         background: #240747;
         border-radius: 15px;
         display: block;
         margin: 0 auto;
         width: 90%;
-      }
+        padding-bottom: 100px;
+      }*/
+
       h1 {
+        color: white;
         text-align: center;
         margin: 20px;
         padding: 20px;
       }
-      footer {
+      img {
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+      }
+      h3 {
         color: white;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+      footer {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .code {
+        margin-top: 10px;
+      }
+      .github-link,
+      .youtube-link,
+      .info-MF-link {
+        margin-top: 10px;
+      }
+      .subscription {
+        background: #d63e2a;
+        border: 1px solid transparent;
+        color: black;
+        font-weight: 600;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 25px;
+        transition: all 200ms ease-in-out;
+      }
+      .subscription:hover {
+        color: #d63e2a;
+        background: black;
+        border: 1px solid #d63e2a;
       }
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mylène Farmer</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About her</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Her freedom</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Her lyrics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Her creativity</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Her actions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Her inspirations</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Her videos</a></li>
-                  <li><a class="dropdown-item" href="#">Her shows</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mylène Farmer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About her</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Freedom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lyrics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Creativity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Charity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inspirations</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Her videos</a></li>
+                <li><a class="dropdown-item" href="#">Her shows</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Mylène Farmer</h1>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="desobeissance.jpg"
+            class="d-block w-100"
+            alt="picture of singer Mylène Farmer sitting proudly on an old yet stylish chair as a conqueror. Her clothes, including a light grey cape and her jackboots and leather jacket and her sword lying on the ground emphasize this impression of strength."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Disobedience</h5>
           </div>
         </div>
-      </nav>
-      <h1>Mylène Farmer</h1>
+        <div class="carousel-wrapper">
+          <div class="carousel-item">
+            <img
+              src="wenig.jpg"
+              class="d-block w-100"
+              alt="Wearing a dark greyish loose dress, singer Mylène Farmer seems to be in a swirl of thoughts in a floating world."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Interstellar</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="innamoramento.jpg"
+              class="d-block w-100"
+              alt="photo of singer Mylène Farmer on an opened-door cage, placed in the middle of the sea. The singer wearing a white floating dress is sitting on the edge of that cage. She looks like a bird which has just been set free. There is an impression of immensity with the multiple shades of blue from the skyline and the sea."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Innamoramento</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container text-center">
+      <h3>Albums</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <img src="cendres-de-lune.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="ainsi-soit-je.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="l'autre.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="anamorphosee.jpg" width="300" alt="" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <img src="innamoramento.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="avant-que-l'ombre.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="point-de-suture.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="bleu-noir.jpg" width="300" alt="" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col"><img src="monkey-me.jpg" width="300" alt="" /></div>
+        <div class="col">
+          <img src="interstellaires.jpg" width="300" alt="" />
+        </div>
+        <div class="col">
+          <img src="desobeissance.jpg" width="300" alt="" />
+        </div>
+        <div class="col"><img src="l'emprise.jpg" width="300" alt="" /></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="tours-wrapper">
+      <div class="container text-center">
+        <h3>Tours</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col"><img src="live89.jpg" width="300" alt="" /></div>
+          <div class="col"><img src="live96.jpg" width="300" alt="" /></div>
+          <div class="col"><img src="live2000.jpg" width="300" alt="" /></div>
+          <div class="col"><img src="live2006.jpg" width="300" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container text-center">
+      <div class="row">
+        <div class="col"><img src="live2009.jpg" width="300" alt="" /></div>
+        <div class="col">
+          <img src="live2019.jpg" width="300" alt="" />2 of 3
+        </div>
+        <div class="col">
+          <img src="nevermore.jpg" width="300" height="300" alt="" />3 of 3
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!--Imported icons from font awesome-->
+    <div class="subscribe-button">
+      <button class="subscription">
+        Abonnez-vous <i class="fa-solid fa-crow"></i>
+      </button>
     </div>
     <footer>
-      Open sourced code by
-      <a href="https://github.com/ManonSella">Manon Sella</a>
-      <!--Add github icon-->
+      <div class="github-link">
+        <p class="code">Open-source code by</p>
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/ManonSella">Manon Sella</a>
+      </div>
+      <div class="youtube-link">
+        <i class="fa-brands fa-youtube"></i>
+        <a href="https://www.youtube.com/c/Myl%C3%A8neFarmerOfficial/videos"
+          >YouTube</a
+        >
+      </div>
+      <div class="info-MF-link">
+        <i class="fa-solid fa-info"></i>
+        <a href="https://www.mylene.net/">For more info and updates</a>
+      </div>
     </footer>
     <script>
       //alert("Hello World");
