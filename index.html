@@ -33,12 +33,42 @@
       body {
         background: rgb(0, 0, 0);
       }
-      .navbar-nav {
+
+      /*Changing cursor with a crow icon when hovering
+      nav:hover {
+        cursor: url(images/icon-crow.png);
+      }*/
+
+      /* !important takes over Boostrap default colors */
+      /* Last resort practice, to be avoided as much as possible */
+      .navbar {
         color: white;
         font-size: 22px;
         font-family: "Times New Roman", Times, serif;
         font-weight: 600;
+        background-color: #631818 !important;
       }
+
+      a.nav-link,
+      .navbar-brand,
+      #about-her-link {
+        color: white;
+      }
+      #about-her-link:hover {
+        color: rgb(0, 0, 0);
+      }
+
+      #quote {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        padding-bottom: 60px;
+        text-align: center;
+        line-height: 40px;
+      }
+
       h1,
       h2,
       h3,
@@ -80,10 +110,11 @@
       .biography {
         color: white;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 50px;
         margin-top: 15px;
         margin-bottom: 20px;
-        padding: 0 80px;
+        padding: 0 120px;
+        text-align: center;
       }
 
       footer {
@@ -105,10 +136,13 @@
         margin-top: 10px;
       }
       .wikipedia-link a {
+        text-align: center;
         color: #d63e2a;
       }
       .wikipedia-link a:hover {
         text-decoration: none;
+        text-align: center;
+        font-style: italic;
       }
       .github-link a,
       .youtube-link a,
@@ -141,10 +175,7 @@
     </style>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body"
-      data-bs-theme="dark"
-    >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-body">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Mylène Farmer</a>
         <button
@@ -161,7 +192,11 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about-her"
+              <a
+                class="nav-link active"
+                id="about-her-link"
+                aria-current="page"
+                href="#about-her"
                 >About her</a
               >
             </li>
@@ -171,12 +206,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#tours">Tours</a>
             </li>
+            <!--To be later added: infos on mylene.net
             <li class="nav-item">
               <a class="nav-link" href="#charity">Charity</a>
+              https://www.innamoramento.net/mylene-farmer/dossiers/humanitaire-associations
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#inspirations">Inspirations</a>
-            </li>
+              https://www.mylene.net/mylene/mylene-farmer-influences-analyses.php
+
+            </li>-->
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#more-info"
                 >More Info</a
@@ -188,6 +227,7 @@
     </nav>
 
     <h1>Mylène Farmer</h1>
+    <quote id="quote"></quote>
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -214,7 +254,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="desobeissance.jpg"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/343/original/desobeissance.jpg?1720960909"
             class="d-block w-100"
             alt="picture of singer Mylène Farmer sitting proudly on an old yet stylish chair as a conqueror. Her clothes, including a light grey cape and her jackboots and leather jacket and her sword lying on the ground emphasize this impression of strength."
           />
@@ -235,7 +275,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="innamoramento.jpg"
+              src="innamoramento-ladder.jpg"
               class="d-block w-100"
               alt="photo of singer Mylène Farmer on an opened-door cage, placed in the middle of the sea. The singer wearing a white floating dress is sitting on the edge of that cage. She looks like a bird which has just been set free. There is an impression of immensity with the multiple shades of blue from the skyline and the sea."
             />
@@ -436,7 +476,7 @@
         </div>
         <div class="col">
           <img
-            src="desobeissance.jpg"
+            src="desobeissance-carree.jpg"
             width="300"
             alt="picture of singer Mylène Farmer sitting proudly on an old yet stylish chair as a conqueror. Her clothes, including a light grey cape and her jackboots and leather jacket and her sword lying on the ground emphasize this impression of strength."
           />
@@ -544,12 +584,42 @@
       function newsletterSubscription() {
         let name = prompt("What is your name?");
         let email = prompt("What is your e-mail?");
-        let message = prompt(
+        alert(
           `Thank you ${name}, we will send you a monthly newsletter at ${email} 🌹`
         );
       }
       let subscriptionButton = document.querySelector(".subscription");
       subscriptionButton.addEventListener("click", newsletterSubscription);
+
+      const quotes = [
+        "For me, love is fundamental to creativity. I really like this sentence from the novelist Luc Dietrich, who says that 'Love is a great useless courage.'",
+        "Amnesia is the only tolerable illness for love.",
+        "Buddhism is a bandage for the soul.",
+        "Time belongs to no one, elusive ballet of stars, Present moment, you are the essence of the journey.",
+        "It seems to me that fame should reflect the recognition of a work, of an action, by the public. Not a cult of personality. Today, we confuse popularity and fame. I prefer to continue moving forward for recognition of my work.",
+        "I have always attached a fundamental importance to my independence. Over time, I realized how valuable it is to be able to decide for yourself. It is a feeling of absolute freedom. A chance too, of course. I am aware of it.",
+        "The infinitely mysterious, the existence of a beyond... A poetic sky... The divine. But it is also the possibility of somewhere else for future generations. The sky is undoubtedly no longer synonymous with a purely spiritual journey, but in the future a possible conquest... Reality will perhaps join science fiction.",
+        "Most of my choices are intuitive. Sometimes I need to be out of my comfort zone, to be carried by a feeling. It is exhilarating, it is nerve-wracking and that is life.",
+        "I don't think it's pride or being sure of oneself. I think it is more of an aversion to compromise. I always told myself that I would never be ruled by my own fears. Because fears can lead to terrible things. But, I never gave in to my fears. I overcame my fears. Sometimes they come back with force, with a bang. But, I will never do anything that is driven by fear. Never.",
+        "I like to develop the imagination, I like to fly away, I like to dream, I like to think. Yes, it is one of my favorite themes.",
+        "I tried to express a certain flight, the idea of a shock caused by love, as falling in love can take you up or down.",
+        "The artist must disappear behind his art. It seems to me that it is a duty of humility.",
+        "The unpredictability appeals to me. This is what transforms everyday life into adventure and life into destiny.",
+      ];
+
+      // .navbar .navbar-brand
+      function generateQuote() {
+        let quoteElement = document.getElementById("quote");
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+
+        //innerHTM = setter
+        quoteElement.innerHTML = quotes[randomIndex];
+      }
+      let quoteLink = document.querySelector(".navbar-brand");
+      quoteLink.addEventListener("click", generateQuote);
+      generateQuote();
+
+      // #quote
     </script>
   </body>
 </html>
