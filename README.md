@@ -6,7 +6,7 @@ This project was completed as part of the SheCodes web page Challenge showcasing
 
 ## Preview
 
-![Screenshot 2024-07-26 at 12 16 11](https://github.com/user-attachments/assets/24fc94ad-74a2-4dda-afdc-bc280bdbf5c9)
+![_Users_Manon_Projects_inspiring-woman_index html](https://github.com/user-attachments/assets/12713d86-606b-47ab-91d1-56d4b5464fbc)
 
 ## Stacks
 
