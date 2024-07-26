@@ -4,6 +4,10 @@
 
 This project was completed as part of the SheCodes web page Challenge showcasing an inspiring French woman, Mylène Farmer.
 
+## Preview
+
+![Screenshot 2024-07-26 at 12 16 11](https://github.com/user-attachments/assets/24fc94ad-74a2-4dda-afdc-bc280bdbf5c9)
+
 ## Stacks
 
 This project was coded in: 
@@ -14,5 +18,3 @@ This project was coded in:
 ## Contact
 
 If you have any questions or feedback, please feel free to contact me.
-
-![Screenshot 2024-07-26 at 12 16 11](https://github.com/user-attachments/assets/24fc94ad-74a2-4dda-afdc-bc280bdbf5c9)
